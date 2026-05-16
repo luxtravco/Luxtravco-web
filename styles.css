@@ -106,25 +106,25 @@ h1, h2, h3, h4 {
 }
 
 .app-promo-inner {
-  width: min(100%, 1040px);
+  width: min(100%, 880px);
   margin: 0 auto;
-  padding: 44px 32px 36px;
+  padding: 24px 32px 26px;
   display: grid;
-  gap: 26px;
+  gap: 16px;
 }
 
 .app-brand {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
 }
 
 .app-brand-logo {
-  width: 86px;
-  height: 86px;
-  border-radius: 24px;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
   object-fit: contain;
-  padding: 8px;
+  padding: 6px;
   background: #090909;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04), 0 14px 34px rgba(0, 0, 0, 0.5);
@@ -133,7 +133,7 @@ h1, h2, h3, h4 {
 .app-brand-copy strong {
   display: block;
   color: #f7f3e8;
-  font-size: clamp(1.85rem, 3.2vw, 2.45rem);
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
   line-height: 1;
   letter-spacing: 0;
   font-weight: 800;
@@ -141,38 +141,38 @@ h1, h2, h3, h4 {
 
 .app-brand-copy span {
   display: block;
-  margin-top: 12px;
+  margin-top: 8px;
   color: rgba(247, 243, 232, 0.52);
-  font-size: clamp(0.88rem, 1.5vw, 1.12rem);
-  letter-spacing: 0.24em;
+  font-size: clamp(0.68rem, 1vw, 0.86rem);
+  letter-spacing: 0.22em;
   text-transform: uppercase;
 }
 
 .app-promo-title {
-  margin: 2px 0 -4px;
+  margin: 0;
   text-align: center;
   color: #fffaf0;
-  font-size: clamp(1.5rem, 3.2vw, 2.35rem);
+  font-size: clamp(1.18rem, 2.4vw, 1.7rem);
   line-height: 1.1;
   font-weight: 800;
 }
 
 .store-badges {
   display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 14px;
 }
 
 .store-badge {
-  min-height: 76px;
-  border-radius: 24px;
+  min-height: 56px;
+  border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: #040404;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 12px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
@@ -183,86 +183,24 @@ h1, h2, h3, h4 {
 }
 
 .store-badge small {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 0.86rem;
+  font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .store-badge strong {
-  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-size: clamp(1.05rem, 1.8vw, 1.45rem);
   letter-spacing: 0;
   font-weight: 800;
 }
 
-.store-icon {
-  position: relative;
+.store-icon-img {
+  width: 28px;
+  height: 28px;
   flex: 0 0 auto;
-}
-
-.store-icon-apple {
-  width: 34px;
-  height: 38px;
-  border-radius: 44% 44% 48% 48%;
-  background: #fff;
-}
-
-.store-icon-apple::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 16px;
-  right: 3px;
-  top: -13px;
-  border-radius: 14px 2px 14px 2px;
-  background: #fff;
-  transform: rotate(32deg);
-}
-
-.store-icon-apple::after {
-  content: "";
-  position: absolute;
-  width: 11px;
-  height: 15px;
-  right: -4px;
-  top: 11px;
-  border-radius: 50%;
-  background: #040404;
-}
-
-.store-icon-play {
-  width: 0;
-  height: 0;
-  border-top: 22px solid transparent;
-  border-bottom: 22px solid transparent;
-  border-left: 36px solid #39d46f;
-}
-
-.store-icon-play::before {
-  content: "";
-  position: absolute;
-  left: -34px;
-  top: -18px;
-  width: 0;
-  height: 0;
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  border-left: 30px solid #2b8fff;
-  transform: scaleY(0.72);
-  transform-origin: left center;
-}
-
-.store-icon-play::after {
-  content: "";
-  position: absolute;
-  left: -21px;
-  top: -10px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 17px solid #ffcf38;
+  object-fit: contain;
 }
 
 .site-header {
@@ -1375,8 +1313,8 @@ body.booking-hourly .hourly-only {
 
 @media (max-width: 800px) {
   .app-promo-inner {
-    padding: 30px 24px 34px;
-    gap: 22px;
+    padding: 22px 24px 24px;
+    gap: 15px;
   }
 
   .app-brand {
@@ -1384,19 +1322,19 @@ body.booking-hourly .hourly-only {
   }
 
   .app-brand-logo {
-    width: 72px;
-    height: 72px;
-    border-radius: 20px;
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
   }
 
   .store-badges {
-    gap: 14px;
+    gap: 12px;
   }
 
   .store-badge {
-    min-height: 64px;
-    border-radius: 18px;
-    gap: 12px;
+    min-height: 52px;
+    border-radius: 15px;
+    gap: 10px;
   }
 
   .store-badge small {
@@ -1448,44 +1386,53 @@ body.booking-hourly .hourly-only {
   }
 
   .app-promo-inner {
-    padding: 28px 18px 34px;
-    gap: 20px;
+    padding: 20px 18px 22px;
+    gap: 14px;
   }
 
   .app-brand-logo {
-    width: 64px;
-    height: 64px;
-    border-radius: 18px;
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
     padding: 6px;
   }
 
   .app-brand-copy strong {
-    font-size: 1.45rem;
+    font-size: 1.2rem;
   }
 
   .app-brand-copy span {
     margin-top: 8px;
-    font-size: 0.72rem;
+    font-size: 0.62rem;
     letter-spacing: 0.2em;
   }
 
   .app-promo-title {
-    font-size: clamp(1.35rem, 7vw, 1.9rem);
+    font-size: clamp(1.1rem, 5.8vw, 1.45rem);
   }
 
   .store-badges {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
   .store-badge {
-    min-height: 64px;
+    min-height: 50px;
     justify-content: flex-start;
-    padding: 0 24px;
+    padding: 0 12px;
   }
 
   .store-badge strong {
-    font-size: 1.45rem;
+    font-size: clamp(0.96rem, 4.6vw, 1.18rem);
+  }
+
+  .store-badge small {
+    font-size: 0.5rem;
+  }
+
+  .store-icon-img {
+    width: 24px;
+    height: 24px;
   }
 
   .utility-bar {

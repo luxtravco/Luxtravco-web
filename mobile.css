@@ -48,9 +48,9 @@ a {
 }
 
 .app-promo-inner {
-  padding: 28px 18px 34px;
+  padding: 20px 18px 22px;
   display: grid;
-  gap: 20px;
+  gap: 14px;
 }
 
 .app-brand {
@@ -60,9 +60,9 @@ a {
 }
 
 .app-brand-logo {
-  width: 64px;
-  height: 64px;
-  border-radius: 18px;
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
   object-fit: contain;
   padding: 6px;
   background: #090909;
@@ -73,7 +73,7 @@ a {
 .app-brand-copy strong {
   display: block;
   color: #f7f3e8;
-  font-size: 1.45rem;
+  font-size: 1.2rem;
   line-height: 1;
   font-weight: 800;
 }
@@ -82,35 +82,36 @@ a {
   display: block;
   margin-top: 8px;
   color: rgba(247, 243, 232, 0.52);
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .app-promo-title {
-  margin: 2px 0 -4px;
+  margin: 0;
   text-align: center;
   color: #fffaf0;
-  font-size: clamp(1.35rem, 7vw, 1.9rem);
+  font-size: clamp(1.1rem, 5.8vw, 1.45rem);
   line-height: 1.1;
   font-weight: 800;
 }
 
 .store-badges {
   display: grid;
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
 }
 
 .store-badge {
-  min-height: 64px;
-  border-radius: 18px;
+  min-height: 50px;
+  border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: #040404;
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 0 24px;
+  gap: 10px;
+  padding: 0 12px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
   min-width: 0;
 }
@@ -123,86 +124,24 @@ a {
 }
 
 .store-badge small {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 0.68rem;
+  font-size: 0.5rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .store-badge strong {
-  font-size: 1.45rem;
+  font-size: clamp(0.96rem, 4.6vw, 1.18rem);
   font-weight: 800;
   overflow-wrap: anywhere;
 }
 
-.store-icon {
-  position: relative;
+.store-icon-img {
+  width: 24px;
+  height: 24px;
   flex: 0 0 auto;
-}
-
-.store-icon-apple {
-  width: 30px;
-  height: 34px;
-  border-radius: 44% 44% 48% 48%;
-  background: #fff;
-}
-
-.store-icon-apple::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 14px;
-  right: 3px;
-  top: -11px;
-  border-radius: 14px 2px 14px 2px;
-  background: #fff;
-  transform: rotate(32deg);
-}
-
-.store-icon-apple::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 14px;
-  right: -4px;
-  top: 10px;
-  border-radius: 50%;
-  background: #040404;
-}
-
-.store-icon-play {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 32px solid #39d46f;
-}
-
-.store-icon-play::before {
-  content: "";
-  position: absolute;
-  left: -31px;
-  top: -16px;
-  width: 0;
-  height: 0;
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  border-left: 27px solid #2b8fff;
-  transform: scaleY(0.72);
-  transform-origin: left center;
-}
-
-.store-icon-play::after {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: -9px;
-  width: 0;
-  height: 0;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
-  border-left: 16px solid #ffcf38;
+  object-fit: contain;
 }
 
 .mobile-header {
